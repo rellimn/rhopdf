@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
-group = 'com.artifex.mupdf'
-version = '1.20.2a'
+group = 'de.rw'
+version = '1.0'
 
 dependencies {
 	if (file('../lib/build.gradle').isFile())
 		api project(':lib')
 	else
-		api 'com.artifex.mupdf:viewer:1.20.2a'
+		api 'de.rw:rhopdf:1.0'
 }
 
 android {
