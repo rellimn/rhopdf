@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="de.rw.rhopdf"
+	android:installLocation="auto"
+	>
+	<application
+		android:label="RhoPDF"
+		android:icon="@mipmap/ic_launcher"
+		>
+		<activity
+			android:name="de.rw.rhopdf.LaunchActivity"
+			android:exported="true"
+			>
+		</activity>
+	</application>
+</manifest>

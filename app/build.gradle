@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+group = 'com.artifex.mupdf'
+version = '1.20.2a'
+
+dependencies {
+	if (file('../lib/build.gradle').isFile())
+		api project(':lib')
+	else
+		api 'com.artifex.mupdf:viewer:1.20.2a'
+}
+
+android {
+	compileSdkVersion 31
+	defaultConfig {
+		minSdkVersion 21
+		targetSdkVersion 31
+		versionName '1.20.2a'
+		versionCode 112
+	}
+
+	splits {
+		abi {
+			enable true
+			universalApk true
+		}
+	}
+
+	bundle {
+		abi {
+			enableSplit true
+		}
+	}
+
+	if (project.hasProperty('release_storeFile')) {
+		signingConfigs {
+			release {
+				storeFile file(release_storeFile)
+				storePassword release_storePassword
+				keyAlias release_keyAlias
+				keyPassword release_keyPassword
+			}
+		}
+		buildTypes {
+			release {
+				signingConfig signingConfigs.release
+				ndk {
+					debugSymbolLevel 'FULL'
+				}
+			}
+		}
+	}
+}
