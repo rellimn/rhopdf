@@ -1,3 +1,13 @@
+# RhoPDF
+<img src="app/src/main/ic_launcher-playstore.png" alt="icon" width="200"/>
+
+## Differences to MuPDF Viewer
+- Added share button
+- Removed document picker and launch icon -> App can only be opened through 'share' or 'open with' dialogue
+- Removed unneeded storage access permission
+## Original README
+https://github.com/ArtifexSoftware/mupdf-android-viewer
+```text
 # MuPDF Android Viewer
 
 This project is a simplified variant of the full MuPDF Android app that only
@@ -141,3 +151,4 @@ task.
 	$ ./gradlew uploadArchives
 
 Good Luck!
+```
