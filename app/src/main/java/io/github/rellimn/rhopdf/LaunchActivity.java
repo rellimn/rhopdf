@@ -1,4 +1,4 @@
-package de.rw.rhopdf;
+package io.github.rellimn.rhopdf;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -19,8 +19,8 @@ public class LaunchActivity extends Activity
 	public void onStart() {
 		super.onStart();
 		ComponentName componentToDisable =
-				new ComponentName("de.rw.rhopdf",
-						"de.rw.rhopdf.LaunchActivity");
+				new ComponentName("io.github.rellimn.rhopdf",
+						"io.github.rellimn.rhopdf.LaunchActivity");
 
 		getPackageManager().setComponentEnabledSetting(
 				componentToDisable,

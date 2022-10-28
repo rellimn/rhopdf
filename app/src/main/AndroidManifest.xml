@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="de.rw.rhopdf"
+	package="io.github.rellimn.rhopdf"
 	android:installLocation="auto"
 	>
 	<application
@@ -8,7 +8,7 @@
 		android:icon="@mipmap/ic_launcher"
 		>
 		<activity
-			android:name="de.rw.rhopdf.LaunchActivity"
+			android:name="io.github.rellimn.rhopdf.LaunchActivity"
 			android:exported="true"
 			>
 		</activity>
